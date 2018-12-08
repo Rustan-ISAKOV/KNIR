@@ -1,0 +1,210 @@
+Здесь примеры начального изучения java
+
+
+package com.company;
+//import java.lang.String;    // для импортирования переменных String
+import java.util.Scanner;
+
+public class Main {
+    // public - модификатор доступа
+    //
+    //
+
+
+    // public static void main(String[] args) {
+    // write your code here
+//        System.out.print("Привет всем!");
+//        System.out.println("Снова, Привет всем!");
+//        System.out.print("С новой строки!");
+
+
+// переменные
+/*        byte num = 23;  // от -128 до 127
+        int num_int = 232656578;
+        float num_float = 3.1415f;
+        double num_dou = 235.541321313132123132132112132d;
+        boolean isTrue = true;
+        char symbol = 'g';
+        String str = "ghgh sdhfghjgf  fdhfgj";
+
+
+        System.out.println(num);
+        System.out.println(num_int);
+        System.out.println(num_float);
+        System.out.println(num_dou);
+        System.out.println(isTrue);
+        System.out.println(symbol);
+        System.out.println(str);*/
+
+// получение инфо от пользователя
+// для этого необх.импортировать спец класс
+//    Scanner str = new Scanner(System.in);
+//    System.out.println("Вы ввели: " + str.nextLine());
+
+// математические операции
+/*        Scanner num = new Scanner(System.in);
+        int first, second, result;
+        System.out.println("Enter first number: ");
+        first = num.nextInt();
+        System.out.println("Enter a second number: ");
+        second = num.nextInt();
+        result = first + second;
+        System.out.println("Result = " + result);*/
+
+// с плавающей запятой и др.
+//        Scanner num = new Scanner(System.in);
+//        float first, second, result;
+//        System.out.print("Enter first number: ");
+//        first = num.nextFloat();
+//        System.out.print("Enter a second number: ");
+//        second = num.nextFloat();
+//        result = first + second;        // % - остаток от деления
+//        result /= 2;                    // равносильно result = result / 2; Тоже и со всеми остальными матем.знаками
+//        result ++;                      // result увелич. на 1, тоже и для уменьшения на 1
+//
+//        System.out.println("Result = " + result);
+
+/*        Scanner num = new Scanner(System.in);
+        int first, second = 50;
+        boolean isTrue = true;
+        System.out.print("Enter first num: ");
+        first = num.nextInt();*/
+
+//        isTrue = first == 51 ? true : false;
+    // isTrue = first == 51 ? true : false;
+    // Читается так: if first =51 то isTrue присвоить true, иначе false; Или равносильно:
+    // isTrue = first == 51; коротко, т.к. итак понятно-сам присвоит либо true либо false
+    // аналогично, second = first >= 60 ? 23 : 55;
+
+
+    /*        if (first == 10 && isTrue *//*==true*//*)      //&& - "и", || - "или".  isTrue пишется без условия, т.к. запись равносильна данной isTrue == true
+            System.out.print("Num is 10");
+
+        if (first > second) {
+            System.out.println("1 > 2");
+            System.out.print("\n");     // Пропуск одной строки
+        } else if (first == 45) {
+            System.out.print (first + " = 45");
+        } else {
+            System.out.println(first + " is lower than " + second);
+        }*/
+
+/*        switch (first) {
+            case 1:
+                System.out.println("1");
+                break;
+            case 2:
+                System.out.println("2");
+                break;
+            case 3:
+                System.out.println("3");
+                break;
+            default:
+                System.out.println("default");
+        }*/
+
+// ЦИКЛЫ и УСЛОВНЫЕ ОПЕРАТОРЫ, BREAK, RETURN, CONTINUE
+
+/*        for (int i=1; i<=10; i++) {
+            System.out.println(i);
+        }*/
+
+/*        for (int i=10; i>0; i--) {  // либо i -= 1? т.е. i=i-1
+            System.out.println(i);
+        }*/
+
+/*        for (int i=1; i<=10; i++) {
+            System.out.println(i);
+        }*/
+
+/*        int j=0;
+        while (j<=10) {
+            System.out.println(j);
+            j+=1;
+        }*/
+
+/*        int k = 0;
+        do {
+            System.out.println("K = " + k);
+            k++;
+            }
+        while (k<=0);*/
+
+    // break, return - выход из цикла, но лучше break.
+    // т.к. return больше используется в фунциях и методах
+    // continue - переход к началу цикла
+
+/*        int j=0;
+        while (j<=10) {
+            j+=1;
+            if (j % 2 == 0) continue;
+            System.out.println(j);
+        }*/
+
+// массивы переменных (данных)
+    //int[] name;     // описание массива целочисленных данных
+    //name = new int[5];// выделяем память под массив из 5 ячеек
+
+// или инициализация массива в другом коротком виде:
+    // int[] name = new int[5];    // индексация от i=0 - 1-й элемент
+    // int[] name = new int[] {11,2,13,41,5};    // здесь же заполнение массива
+//        float[] name = new float[] {11.2f,2.2f,13.265f,41.25f,5.12f};    // здесь же заполнение массива
+//
+//        for (int i=0; i<5; i++) {
+//            System.out.println(name[i]);
+//        }
+
+//        int n;
+//        int [] a;
+//        System.out.println("Enter number of array: ");
+//        Scanner in =  new Scanner(System.in);
+//        n = in.nextInt();
+//        a = new int[n];
+//        for (int i=0; i<n; i++) {
+//            System.out.println("Enter a[" + i + "] = ");
+//            a[i] = in.nextInt();
+//        }
+
+
+// МНОГОМЕРНЫЕ МАССИВЫ
+//        int [][] arr;         // объявляем многомерный массив
+//        arr = new int[3][3];  // выделяем под него память, arr.length - длина массива
+
+
+// ФУНКЦИИ - это подпрограммы на которые можно ссылаться, используется когда этот кусочек кода повторяется в основном коде > 1 раза
+
+    // void - функция ничего не возвращает, т.е. только что-либо выводит на экран
+    // тогда вызов будет просто Stepen (a1, b1), т.е. ничему не присваивается.
+    // функция вызвана, результат выведен на экран и все...
+    // return - возвращает результат, для int, char, ...
+    // также есть рекурсивная ф-ция - т.е. вызывает сама себя
+
+/*    public static void main(String[] args) {
+        int a1; int b1;
+        Scanner st = new Scanner(System.in);
+        System.out.print("Enter a1=");
+        a1 = st.nextInt();
+        System.out.print("Enter b1=");
+        b1 = st.nextInt();
+        int temp = Stepen (a1, b1);
+        System.out.print("Result is = " + temp);
+    }
+
+    public static int Stepen (int a, int b) {
+        int result = a + b;
+        return result;
+    }*/
+
+//    public static void main (String[] args) {
+//        Scanner inp = new Scanner(System.in);
+//        System.out.print("Enter massiv number m= ");
+//        int m = inp.nextInt();
+//        int [] temp = massiv(m);
+//    }
+//
+//    public static int[] massiv (int n) {
+//        int [] arr;
+//        arr = new int[n];
+//        for (int i=0; i<n; i++) arr[i] = i*i;
+//        return arr;
+//    }
